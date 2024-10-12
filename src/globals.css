@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --black-pure: hsl(250, 0%, 0%);
+    --black: hsl(240, 10%, 20%);
+    --black-light: hsl(230, 10%, 30%);
+
+    --grey-dark: hsl(220, 10%, 40%);
+    --grey: hsl(210, 10%, 50%);
+
+    --white: hsl(55, 100%, 100%);
+
+    --primary: hsl(40, 100%, 50%);
+
+    --secondary: hsl(200, 100%, 50%);
+
+    --error: hsl(0, 100%, 65%);
+    --success: hsl(100, 100%, 50%);
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+
+    font-weight: 100;
+    color: var(--white);
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body {
+    background-color: var(--black);
+
+    color: var(--white);
+}
+
+body,
+input,
+textarea,
+button {
+    font-family: "Courier New", Courier, monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4,
+p {
+    font-size: 1rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--black);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--grey-dark);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--grey);
+}

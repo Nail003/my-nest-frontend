@@ -1,0 +1,12 @@
+.button-text {
+    padding: 8px 16px;
+    border: 1px solid var(--black-light);
+
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.button-text:hover,
+.button-text:focus {
+    border: 1px solid var(--primary);
+}

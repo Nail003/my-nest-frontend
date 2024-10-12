@@ -1,0 +1,16 @@
+.inbox {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    position: absolute;
+    height: calc(100% - 16px);
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.inbox__heading {
+    padding: 4px 8px;
+    padding-top: 8px;
+    font-weight: bold;
+}

@@ -1,0 +1,19 @@
+.inbox-element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.inbox-element__user-name {
+    text-align: left;
+}
+
+.inbox-element--active,
+.inbox-element:hover,
+.inbox-element:focus {
+    background-color: var(--black-light);
+}

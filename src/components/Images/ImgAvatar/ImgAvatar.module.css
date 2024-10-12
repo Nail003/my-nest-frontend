@@ -1,0 +1,11 @@
+.img-avatar {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.img-avatar,
+.img-avatar__loader {
+    --size: 48px;
+    width: var(--size);
+    height: var(--size);
+}

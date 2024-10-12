@@ -1,0 +1,31 @@
+.button-menu {
+    display: inline-block;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: var(--primary);
+    margin: 6px 0;
+    --transition-time: 0.25s;
+    transition: transform var(--transition-time), opacity var(--transition-time);
+}
+
+/* Rotate first bar */
+.change.bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change.bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change.bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}

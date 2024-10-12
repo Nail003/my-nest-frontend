@@ -1,0 +1,13 @@
+.message-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+
+    position: absolute;
+    width: 100%;
+    /*Todo: Need to change the 48px to dynamic height of messageForm*/
+    height: calc(100% - 48px);
+    overflow-y: scroll;
+    padding: 8px 0px;
+}

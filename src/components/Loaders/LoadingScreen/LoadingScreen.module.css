@@ -1,0 +1,12 @@
+.loading-screen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-screen__loader {
+    --size: 128px;
+    width: var(--size);
+    height: var(--size);
+}

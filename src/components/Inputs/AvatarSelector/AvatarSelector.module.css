@@ -1,0 +1,12 @@
+.avatar-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    width: 100%;
+    padding-bottom: 8px;
+}
+
+.avatar-selector__title {
+    font-weight: bold;
+}

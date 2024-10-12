@@ -1,0 +1,16 @@
+.input-message {
+    width: 100%;
+    padding: 12px 4px;
+    border: 1px solid white;
+    outline: none;
+    resize: none;
+
+    overflow: hidden;
+    font-size: 1.25rem;
+    color: white;
+    background: none;
+}
+
+.input-message:focus {
+    border-color: var(--primary);
+}

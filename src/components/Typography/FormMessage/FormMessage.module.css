@@ -1,0 +1,13 @@
+.form-message {
+    font-weight: bold;
+    color: var(--error);
+    display: none;
+}
+
+.form-message--success {
+    color: var(--success);
+}
+
+.form-message--visible {
+    display: block;
+}

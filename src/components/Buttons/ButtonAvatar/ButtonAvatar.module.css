@@ -1,0 +1,22 @@
+.button-avatar {
+    border: 2px solid var(--white);
+    border-radius: 50%;
+
+    cursor: pointer;
+    transition: transform 200ms;
+}
+
+.button-avatar:hover,
+.button-avatar:focus {
+    border-color: var(--secondary);
+}
+
+.button-avatar:hover {
+    transform: scale(1.1);
+}
+
+.button-avatar--active,
+.button-avatar--active:focus,
+.button-avatar--active:hover {
+    border-color: var(--primary);
+}

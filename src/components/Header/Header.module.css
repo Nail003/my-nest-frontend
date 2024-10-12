@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 8px 16px;
+    border-bottom: 2px solid var(--white);
+    background-color: var(--black-light);
+}
+
+.header__title {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.header__text {
+    font-weight: bold;
+    color: var(--secondary);
+}
