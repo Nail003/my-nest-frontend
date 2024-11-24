@@ -11,7 +11,7 @@ const MessagesContainer = () => {
     const [loading, setLoading] = useState(false);
     const { chatName } = useParams();
     const limit = 20;
-    const messageLoadInterval = 5000;
+    const messageLoadInterval = 1000;
 
     useEffect(() => {
         setLoading(true);

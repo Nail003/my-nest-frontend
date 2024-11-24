@@ -9,23 +9,28 @@ import { UserContext } from "../../../contexts";
 
 const MessageForm = () => {
     const [message, setMessage] = useState("");
+    const [sendingMessage, setSendingMessage] = useState(false);
+
     const { chatName } = useParams();
     const { user } = useContext(UserContext);
     const submitButtonRef = useRef();
     const navigate = useNavigate();
 
-    function handleSubmit(e) {
+    async function handleSubmit(e) {
         e.preventDefault();
         const { isLoggedIn } = user;
 
         try {
             if (isLoggedIn) {
-                sendMessage(message, chatName);
+                setSendingMessage(true);
+                await sendMessage(message, chatName);
             } else {
                 navigate("/");
             }
         } catch (e) {
             console.error(e);
+        } finally {
+            setSendingMessage(false);
         }
 
         setMessage("");
@@ -40,7 +45,9 @@ const MessageForm = () => {
                 submitButtonRef={submitButtonRef}
                 required
             />
-            <ButtonText innerRef={submitButtonRef}>Send</ButtonText>
+            <ButtonText loading={sendingMessage} innerRef={submitButtonRef}>
+                Send
+            </ButtonText>
         </Form>
     );
 };

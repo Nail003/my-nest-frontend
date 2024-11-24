@@ -3,12 +3,12 @@ import React from "react";
 import { ImgAvatar } from "../../Images";
 import styles from "./ButtonAvatar.module.css";
 
-const ButtonAvatar = ({ src, avatar, setAvatar, ...props }) => {
-    const isActiveAvatar = src === avatar;
+const ButtonAvatar = ({ avatarIndex, avatar, setAvatar, ...props }) => {
+    const isActiveAvatar = avatarIndex === avatar;
 
     function handleClick(e) {
         e.preventDefault();
-        setAvatar(src);
+        setAvatar(avatarIndex);
     }
 
     return (
@@ -19,14 +19,14 @@ const ButtonAvatar = ({ src, avatar, setAvatar, ...props }) => {
             }`}
             {...props}
         >
-            <ImgAvatar {...{ src }} />
+            <ImgAvatar {...{ avatarIndex }} />
         </button>
     );
 };
 
 ButtonAvatar.propTypes = {
-    src: PropType.string,
-    avatar: PropType.string,
+    avatarIndex: PropType.number,
+    avatar: PropType.number,
     setAvatar: PropType.func,
 };
 

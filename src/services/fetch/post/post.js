@@ -7,5 +7,6 @@ export async function post(url, data) {
         body: JSON.stringify(data),
         mode: "cors",
     });
+
     return response;
 }

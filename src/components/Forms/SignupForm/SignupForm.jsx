@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import { Form } from "../";
+import { useCredentialFormStates } from "../../../hooks";
+import { createUser } from "../../../services/user";
 import { Button } from "../../Buttons";
+import { FormLinksContainer } from "../../Containers";
 import { AvatarSelector, Input } from "../../Inputs";
 import { FormLinkText, FormMessage, TitleWithBg } from "../../Typography";
-import { FormLinksContainer } from "../../Containers";
-import { createUser } from "../../../services/user";
-import { avatars } from "../../../assets/avatars";
-import { useCredentialFormStates } from "../../../hooks";
 
-const initailAvatar = avatars[0];
+const initailAvatar = 0;
 
 const SignupForm = () => {
     const [avatar, setAvatar] = useState(initailAvatar);

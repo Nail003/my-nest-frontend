@@ -22,7 +22,7 @@ const UserAvatar = ({ userName }) => {
         }
     }
 
-    return <ImgAvatar src={avatar} alt={userName} {...{ loading }} />;
+    return <ImgAvatar avatarIndex={avatar} alt={userName} {...{ loading }} />;
 };
 
 export default UserAvatar;

@@ -14,8 +14,11 @@ const AvatarSelector = (props) => {
                 Choose your Avatar
             </h3>
             <AvatarsContainer>
-                {avatars.map((src, index) => (
-                    <ButtonAvatar key={index} {...{ src, ...props }} />
+                {avatars.map((_src, avatarIndex) => (
+                    <ButtonAvatar
+                        key={avatarIndex}
+                        {...{ avatarIndex, ...props }}
+                    />
                 ))}
             </AvatarsContainer>
         </div>

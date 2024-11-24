@@ -9,7 +9,7 @@ import styles from "./Inbox.module.css";
 const Inbox = () => {
     const [userChats, setUserChats] = useState([]);
     const [loading, setLoading] = useState(false);
-    const chatLoadInterval = 10000;
+    const chatLoadInterval = 1000;
 
     useEffect(() => {
         setLoading(true);
